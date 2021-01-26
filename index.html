@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Webpage name tag -->
+    <title>Jess Owens-Portfolio</title>
+    <!-- Reference to style sheet for rendering elements-->
+    <link rel="stylesheet" href="app.css">
+    <!-- Reference to stylesheet for main elements (body, h1, h2, etc) -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Website icon next to name tag -->
+    <!-- <link rel="shortcut icon" type="image/png" href="Assets/favicon.png"> -->
+    <!-- Font link from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Reference to P5.js libraries -->
+    <script src="Libraries/P5.js/p5.js"></script>
+    <script src="Libraries/P5.js/p5.dom.js"></script>
+    <script src="Libraries/P5.js/p5.sound.js"></script>
+    <script src="Libraries/P5.js/sketch.js"></script>
+
+
+    <!-- Start of the body of the page -->
+<body>
+    <div class="main_GridFlex">
+        <div class="vertical_grid">
+            <div class="grid_cols">
+                <h1 style="width: 254px;">
+                    Jessica
+                    Owens
+                </h1>
+                <h2>
+                    UX + UI designer
+                </h2>
+                <div class="Can_sketch" id="Can_sketch"></div>
+            </div>
+
+            <div class="grid_cols">
+                <div class="deltaTimeCintainet">
+                    <h3 class="deltatime" style="text-align: right;">
+                        <span id="timeTag"></span>
+                        <span id="dayTag"></span>
+                        <br>
+                        <span id="monthTag"></span>
+                    </h3>
+                    <img class="logo_large" src="Assets/logo.png" alt="web-content" />
+                    <nav class="menu">
+                        <ul class="nave_links">
+                            <li><a href="About.html">About</a></li>
+                            <li>Contact</li>
+                            <li>Work</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Controle.js"></script>
+</body>
+
+</html>

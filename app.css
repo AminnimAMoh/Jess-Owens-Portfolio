@@ -1,0 +1,62 @@
+.main_GridFlex {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 145px;
+}
+
+.vertical_grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid_cols {
+    box-sizing: border-box;
+    border: 1px red;
+    overflow-y: hidden;
+}
+
+.logo_large {
+    width: 60%;
+    margin-top: 75px;
+    margin-left: 40%;
+}
+
+.menu{
+    box-sizing: border-box;
+}
+.nave_links {
+    position: fixed;
+    bottom: 60px;
+    width: 20%;
+    left: 65%;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px;
+    color: #4F738D;
+}
+
+.paragraphContainer{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.about_imageContainer{
+    position: relative ;
+    width: 50%;
+    height: 600px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    background-image: url("Assets/About_Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
