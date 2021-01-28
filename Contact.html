@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Webpage name tag -->
+  <title>Jess Owens-Portfolio</title>
+  <!-- Reference to style sheet for rendering elements-->
+  <link rel="stylesheet" href="app.css">
+  <!-- Reference to stylesheet for main elements (body, h1, h2, etc) -->
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="Contact.css">
+  <!-- Website icon next to name tag -->
+  <!-- <link rel="shortcut icon" type="image/png" href="Assets/favicon.png"> -->
+  <!-- Font link from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Animation Controler GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous">
+    </script>
+  <!-- Reference to P5.js libraries -->
+  <script src="Libraries/P5.js/p5.js"></script>
+  <script src="Libraries/P5.js/p5.dom.js"></script>
+  <script src="Libraries/P5.js/p5.sound.js"></script>
+  <script src="Libraries/P5.js/sketch.js"></script>
+
+
+  <!-- Start of the body of the page -->
+
+<body>
+  <div class="main_GridFlex">
+    <div class="vertical_grid" style="grid-template-columns: 80% 20%;">
+      <div class="grid_cols">
+        <h1>Contact</h1>
+        <p>Check out my <a href="" class="Bold_Span">cv</a></p>
+        <p>Find me on <a href="" class="Bold_Span">linkedIn</a> or <span style="font-weight: 600;">email</span> me below
+        </p>
+        <form action="contact.php" method="post" style="margin-left: 30%;">
+          <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="title">Sunject</label>
+            <input type="text" id="title" name="email_title" required placeholder="Sunject of Your e-mail"
+              pattern=[A-Za-z0-9\s]{8,60}>
+          </div>
+          <div class="elem-group">
+            <label for="message">Write your message</label>
+            <textarea id="message" name="visitor_message" placeholder="Content of your e-mail." required>
+            </textarea>
+            <br>
+            <button type="submit" class="form_button">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="grid_cols">
+        <a href="index.html"><img class="logo_large" src="Assets/logo.png" alt="web-content"
+          style="width: 55%; opacity: .5; margin-left: 20%; margin-top: 0px;" /></a>
+      </div>
+    </div>
+    <div class="animate" style="width: 130px; position: relative; left: 90%;">
+      <h2>Thank u</h2>
+  </div>
+  </div>
+</body>
+
+</html>
