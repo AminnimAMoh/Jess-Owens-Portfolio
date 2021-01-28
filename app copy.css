@@ -67,14 +67,3 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.work_labales{
-    font-weight: 500;
-font-size: 35px;
-line-height: 141.5%;
-color: #FCFCFC;
-}
-
-.animate{
-    transform: translateX(0);
-}

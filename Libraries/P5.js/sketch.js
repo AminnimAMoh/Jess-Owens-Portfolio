@@ -22,7 +22,13 @@ function setup() {
 
 function draw() {
 	Can.background("#FDFBEE");
+
+	stroke(0);
+	noFill();
+	ellipse(width/2,height/2,width/2,width/2);
 	
+	noStroke();
+	fill(64, 255, 255, 192);
 	for (var particleA = 0; particleA < mass.length; particleA++) {
 		var accelerationX = 0, accelerationY = 0;
 		

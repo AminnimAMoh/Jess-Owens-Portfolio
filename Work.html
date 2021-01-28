@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Webpage name tag -->
+    <title>Jess Owens-Portfolio</title>
+    <!-- Reference to style sheet for rendering elements-->
+    <link rel="stylesheet" href="app.css">
+    <!-- Reference to stylesheet for main elements (body, h1, h2, etc) -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Website icon next to name tag -->
+    <!-- <link rel="shortcut icon" type="image/png" href="Assets/favicon.png"> -->
+    <!-- Font link from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Animation Controler GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous">
+        </script>
+    <!-- Reference to P5.js libraries -->
+    <script src="Libraries/P5.js/p5.js"></script>
+    <script src="Libraries/P5.js/p5.dom.js"></script>
+    <script src="Libraries/P5.js/p5.sound.js"></script>
+    <script src="Libraries/P5.js/sketch.js"></script>
+
+
+    <!-- Start of the body of the page -->
+
+<body style="background-color: #343434; overflow: hidden;;">
+    <div class="main_GridFlex">
+        <div class="vertical_grid">
+            <div class="grid_cols" style="padding-top: 80px; padding-right: 160px; padding-bottom: 90px;">
+                <h2 style="font-weight: 500;
+                font-size: 50px;
+                line-height: 75px;
+                
+                color: #FDFBEE;">Website’s</h2>
+                <p style="margin-top: 55px; font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: white">
+                    web development & brand identity
+                </p>
+                <h2 class="work_labales"><a href="https://www.njrpartners.com">njrpartners.com</a></h2>
+                <h2 class="work_labales"><a href="https://www.stratam8.com">stratam8.com</a></h2>
+                <h2 class="work_labales"><a href="http://www.myndstudios.com">myndstudios.com??????</a></h2>
+                <h2 class="work_labales"><a href="https://www.sarahed.com.au">sarahed.com.au</a></h2>
+                <h2 class="work_labales">duet.com.au (coming soon!)</h2>
+                <br>
+                <p style="margin-top: 25px; font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: white">project marketing</p>
+                <h2 class="work_labales"><a href="https://www.oneresidents.com">oneresidents.com</a></h2>
+                <h2 class="work_labales"><a href="https://www.viewresidents.com">viewresidents.com</a></h2>
+                <h2 class="work_labales"><a href="https://www.keeresidents.com">keeresidents.com</a></h2>
+            </div>
+
+
+            <div class="grid_cols">
+                <img class="logo_large" src="Assets/small-logo-pink.png" alt="web-content"
+                    style="width: 15%; opacity: 1; margin-left: 80%; margin-top: 0px;" />
+            </div>
+        </div>
+        <div class="animate">
+            <h2 style="width: 150px; height: 150px;">
+                design/
+                projects</h2>
+        </div>
+    </div>
+
+    <script>
+        const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+        tl.to(".animate", { x: '90%', duration: 1, delay: .8 });
+    </script>
+</body>
+
+</html>
